@@ -6,27 +6,32 @@
 <title>Brenda Armstrong - Front End Developer & AI/Digital Strategist</title>
 <style>
   body, html {
-    height: 75%;
+    height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
   }
   
   .bg-image {
     background-image: url('Brenda-Web-Hero2-image.png');
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 75%;
+    background-size: auto 100%;
     position: relative;
+    overflow: auto;
   }
 
   .email-link {
     position: absolute;
-    top: 80%; /* Adjust the top value to position the clickable area */
-    left: 90%; /* Adjust the left value to position the clickable area */
-    transform: translate(-50%, -50%);
-    width: 200px; /* Adjust the width of the clickable area */
-    height: 40px; /* Adjust the height of the clickable area */
+    top: 20px; /* Adjust the top value based on the actual image */
+    right: 20px; /* Position the link to the right */
+    width: 230px; /* Adjust the width based on the actual image */
+    height: 50px; /* Adjust the height based on the actual image */
+  }
+
+  @media screen and (max-width: 768px) {
+    .bg-image {
+      background-size: cover;
+    }
   }
 </style>
 </head>
