@@ -6,38 +6,36 @@
 <title>Brenda Armstrong - Front End Developer & AI/Digital Strategist</title>
 <style>
   body, html {
-    height: 100%;
     margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
   }
   
   .bg-image {
-    background-image: url('brenda-armstrong.png');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    position: relative;
-    overflow: auto;
+    background-image: url('./images/brenda-armstrong.png'); /* Update the URL to the correct path */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: scroll; /* The image will scroll with the page */
+    background-size: contain; /* Fit the image to the container */
+    min-height: 100%;
+    position: relative; /* Relative to the viewport */
   }
 
   .email-link {
     position: absolute;
-    top: 20px; /* Adjust the top value based on the actual image */
-    right: 20px; /* Position the link to the right */
-    width: 230px; /* Adjust the width based on the actual image */
-    height: 50px; /* Adjust the height based on the actual image */
-  }
-
-  @media screen and (max-width: 768px) {
-    .bg-image {
-      background-size: cover;
-    }
+    top: 20px; /* Position from the top of the viewport */
+    right: 20px; /* Position from the right of the viewport */
+    width: 240px; /* Width of the clickable area */
+    height: 60px; /* Height of the clickable area */
+    z-index: 10; /* Ensure the link is clickable by bringing it above the image */
   }
 </style>
 </head>
 <body>
 
 <div class="bg-image">
+  <!-- Email link positioned at the top right of the viewport -->
   <a href="mailto:hello@brendaarmstrong.ca" class="email-link" alt="Email Brenda Armstrong"></a>
 </div>
 
